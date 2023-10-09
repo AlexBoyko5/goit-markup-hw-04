@@ -43,10 +43,12 @@ address {
 /**===HEADER=============================*/
 
 .container-header {
-    border-bottom: 1px;
     display: flex;
     align-items: center;
     border: 1px solid #f70707;
+    border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
+    background: var(--WHITE, #FFF);
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
 .header {
@@ -93,10 +95,14 @@ address {
     gap: 40px;
 }
 
+.header-stuio-link {
+    position: relative;
+    color: #404bbf;
+}
+
 
 .header-menu-link {
-    color: #2E2F42;
-    display: block;
+    color: NAVY BLUE display: block;
     padding: 24px 0;
 }
 
@@ -119,6 +125,8 @@ address {
 
 .header-address-link {
     color: var(--SLATE, #434455);
+    padding: 24px 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-address-link:hover,
@@ -134,7 +142,8 @@ address {
 .solutions {
     background: var(--NAVY-BLUE, #2E2F42);
     padding: 188px 0;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -308,7 +317,6 @@ address {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-list-link {
@@ -320,13 +328,14 @@ address {
     fill: #F4F4FD;
     border-radius: 50%;
     background-color: #4D5AE5;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-list-item:hover .icon-list-link:hover {
+.icon-list-link:hover {
     background-color: #404bbf;
 }
 
-.icon-list-item:focus .icon-list-link:focus {
+.icon-list-link:focus {
     background-color: #404bbf;
 }
 
