@@ -330,8 +330,6 @@ address {
     background-color: #404bbf;
 }
 
-.icon-img {}
-
 /**===PORTFOLIO========================*/
 
 .portfolio {
@@ -368,7 +366,7 @@ address {
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
-.portfolio-list-item:hover .portfoio-image-content {
+.portfolio-list-item:hover .portfoio-image-text {
     transform: translateY(0);
 }
 
@@ -377,7 +375,12 @@ address {
     overflow: hidden;
 }
 
-.portfoio-image-content {
+.portfoio-image-text {
+    color: #f4f4fd;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     position: absolute;
     top: 0;
     left: 0;
@@ -389,14 +392,6 @@ address {
     background: var(--IRIS, #4D5AE5);
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.portfoio-image-text {
-    color: #f4f4fd;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
 }
 
 .portfoio-image {
@@ -496,10 +491,10 @@ address {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-list-item:hover .footer-list-link:hover {
+.footer-list-link:hover {
     background-color: #31d0aa;
 }
 
-.footer-list-item:focus .footer-list-link:focus {
+.footer-list-link:focus {
     background-color: #31d0aa;
 }
