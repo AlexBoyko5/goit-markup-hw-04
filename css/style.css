@@ -95,15 +95,26 @@ address {
     gap: 40px;
 }
 
-.header-stuio-link {
+.header-menu-link {
+    color: NAVY BLUE;
+    display: block;
+    padding: 24px 0;
     position: relative;
-    color: #404bbf;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.current {
+    color: #404bbf
+}
 
-.header-menu-link {
-    color: NAVY BLUE display: block;
-    padding: 24px 0;
+.current::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
 }
 
 .header-menu-link:hover,
