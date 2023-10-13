@@ -96,7 +96,7 @@ address {
 }
 
 .header-menu-link {
-    color: NAVY BLUE;
+    color: inherit;
     display: block;
     padding: 24px 0;
     position: relative;
@@ -111,6 +111,7 @@ address {
     content: "";
     position: absolute;
     left: 0;
+    width: 100%;
     bottom: -1px;
     height: 4px;
     background-color: #404bbf;
